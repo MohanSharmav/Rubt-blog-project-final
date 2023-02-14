@@ -1,0 +1,27 @@
+
+
+<div class="jumbotron">
+<h1 class="display-4">
+  <%= @blog.title %>
+
+
+</h1>
+<p class="lead">
+<%= @blog.textBody %>| 
+<%= @blog.category %> 
+
+</p>
+<br/>
+
+
+
+</div>
+<p style="color: green"><%= notice %></p>
+
+
+<div>
+  <%= link_to "Edit this blog", edit_blog_path(@blog) ,class:"btn btn-danger"%> 
+  <%= link_to "Back to blogs", blogs_path,class:"btn btn-danger "%>
+
+  <%= link_to "Destroy this blog", @blog, method: :delete, class:"btn btn-danger" %>
+</div>

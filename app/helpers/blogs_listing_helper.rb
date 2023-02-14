@@ -1,0 +1,2 @@
+module BlogsListingHelper
+end
